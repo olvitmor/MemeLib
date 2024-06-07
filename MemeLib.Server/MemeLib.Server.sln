@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeLib.StartUp", "MemeLib.StartUp\MemeLib.StartUp.csproj", "{EA1E03CC-97C2-4710-AF92-B0DEADA60C83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{0E8081C3-0AF4-405C-86DB-1A49089EDD18}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeLib.DbContext", "MemeLib.DbContext\MemeLib.DbContext.csproj", "{2A2E31A7-01F9-4AD2-80B2-FDCA9645D2B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeLib.Domain", "MemeLib.Domain\MemeLib.Domain.csproj", "{EB2EF75F-FB87-492C-9544-8F7D33289E6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeLib.Api", "MemeLib.Api\MemeLib.Api.csproj", "{2311B462-CA7F-40C0-9A11-52169FADCCE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeLib.Validation", "MemeLib.Validation\MemeLib.Validation.csproj", "{0125D511-D08F-46E9-8C3D-A364E9157196}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeLib.Tests", "MemeLib.Tests\MemeLib.Tests.csproj", "{5E976C94-FA17-4C77-B086-58A33D07F3A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA1E03CC-97C2-4710-AF92-B0DEADA60C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1E03CC-97C2-4710-AF92-B0DEADA60C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1E03CC-97C2-4710-AF92-B0DEADA60C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1E03CC-97C2-4710-AF92-B0DEADA60C83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A2E31A7-01F9-4AD2-80B2-FDCA9645D2B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A2E31A7-01F9-4AD2-80B2-FDCA9645D2B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A2E31A7-01F9-4AD2-80B2-FDCA9645D2B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A2E31A7-01F9-4AD2-80B2-FDCA9645D2B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB2EF75F-FB87-492C-9544-8F7D33289E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB2EF75F-FB87-492C-9544-8F7D33289E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB2EF75F-FB87-492C-9544-8F7D33289E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB2EF75F-FB87-492C-9544-8F7D33289E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2311B462-CA7F-40C0-9A11-52169FADCCE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2311B462-CA7F-40C0-9A11-52169FADCCE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2311B462-CA7F-40C0-9A11-52169FADCCE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2311B462-CA7F-40C0-9A11-52169FADCCE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0125D511-D08F-46E9-8C3D-A364E9157196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0125D511-D08F-46E9-8C3D-A364E9157196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0125D511-D08F-46E9-8C3D-A364E9157196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0125D511-D08F-46E9-8C3D-A364E9157196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E976C94-FA17-4C77-B086-58A33D07F3A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E976C94-FA17-4C77-B086-58A33D07F3A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E976C94-FA17-4C77-B086-58A33D07F3A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E976C94-FA17-4C77-B086-58A33D07F3A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
