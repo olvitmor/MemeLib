@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using System.Net;
 using MemeLib.Domain.Interfaces.ReadEntity;
 using MemeLib.Domain.Models;
 using Microsoft.AspNetCore.Http;
