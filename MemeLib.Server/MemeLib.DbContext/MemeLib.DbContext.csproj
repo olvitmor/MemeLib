@@ -8,10 +8,12 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Models\" />
+      <ProjectReference Include="..\MemeLib.Domain\MemeLib.Domain.csproj" />
     </ItemGroup>
 
 </Project>

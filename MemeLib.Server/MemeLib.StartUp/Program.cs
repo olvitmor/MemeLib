@@ -1,4 +1,5 @@
-﻿using MemeLib.StartUp.Modules;
+﻿using MemeLib.Services;
+using MemeLib.StartUp.Modules;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
 
@@ -13,6 +14,7 @@ internal static class Program
             .UseStartupModule()
             .UseOptions()
             .UseDbContextModule()
+            .RegisterHostedServices()
             .Build();
 
         if (app.Environment.IsDevelopment())
