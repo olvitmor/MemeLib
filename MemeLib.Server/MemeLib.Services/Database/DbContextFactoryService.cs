@@ -6,7 +6,7 @@ using Microsoft.Extensions.Options;
 
 namespace MemeLib.Services.Database;
 
-public class DbContextFactoryService : IDbContextFactory<AppDbContext>
+public class DbContextFactoryService : IAppDbContextFactory
 {
     private readonly PostgreSQLOptions _options;
     private readonly ILogger<DbContextFactoryService> _logger;
@@ -16,7 +16,6 @@ public class DbContextFactoryService : IDbContextFactory<AppDbContext>
         _options = options.Value;
         _logger = logger;
     }
-
 
     public AppDbContext CreateDbContext()
     {

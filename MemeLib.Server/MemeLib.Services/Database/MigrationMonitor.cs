@@ -10,9 +10,9 @@ namespace MemeLib.Services.Database;
 internal class MigrationMonitor : IMigrationMonitor
 {
     private readonly ILogger<MigrationMonitor> _logger;
-    private readonly IDbContextFactory<AppDbContext> _dbContextFactory;
+    private readonly IAppDbContextFactory _dbContextFactory;
     
-    public MigrationMonitor(ILogger<MigrationMonitor> logger,IDbContextFactory<AppDbContext> dbContextFactory)
+    public MigrationMonitor(ILogger<MigrationMonitor> logger, IAppDbContextFactory dbContextFactory)
     {
         _logger = logger;
         _dbContextFactory = dbContextFactory;

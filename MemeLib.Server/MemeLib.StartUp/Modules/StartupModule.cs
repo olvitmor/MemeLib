@@ -15,7 +15,12 @@ public static class StartupModule
 
         builder.Services
             .AddEndpointsApiExplorer()
-            .AddSwaggerGen();
+            .AddSwaggerGen(o =>
+            {
+                o.EnableAnnotations();
+                var xmlFilename = $"{typeof(ApiModule).Assembly.GetName().Name}.xml";
+                o.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+            });
 
         return builder;
     }

@@ -14,6 +14,7 @@ internal static class Program
             .UseStartupModule()
             .UseOptions()
             .UseDbContextModule()
+            .RegisterRepositoryServices()
             .RegisterHostedServices()
             .Build();
 

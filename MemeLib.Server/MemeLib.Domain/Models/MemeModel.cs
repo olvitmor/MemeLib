@@ -1,9 +1,7 @@
 namespace MemeLib.Domain.Models;
 
-public class MemeModel
+public class MemeModel : BaseEntity
 {
-    public Guid Id { get; set; }
-    
     public string Alias { get; set; }
     
     public DateTime Ts { get; set; }
