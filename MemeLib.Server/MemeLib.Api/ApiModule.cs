@@ -1,5 +1,5 @@
 ﻿namespace MemeLib.Api;
 
-public class Class1
+public class ApiModule
 {
 }

@@ -4,8 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeLib.StartUp", "MemeLib.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{0E8081C3-0AF4-405C-86DB-1A49089EDD18}"
 	ProjectSection(SolutionItems) = preProject
-		.dockerignore = .dockerignore
 		.gitignore = .gitignore
+		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeLib.DbContext", "MemeLib.DbContext\MemeLib.DbContext.csproj", "{2A2E31A7-01F9-4AD2-80B2-FDCA9645D2B2}"
@@ -16,7 +16,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeLib.Api", "MemeLib.Api\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeLib.Validation", "MemeLib.Validation\MemeLib.Validation.csproj", "{0125D511-D08F-46E9-8C3D-A364E9157196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeLib.Tests", "MemeLib.Tests\MemeLib.Tests.csproj", "{5E976C94-FA17-4C77-B086-58A33D07F3A7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BF15ACFA-A9C1-4C7A-8DD8-4D8BFA8EB25A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8A2BACA3-9BAD-4BCD-8756-A2172C0B58EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeLib.Services", "MemeLib.Services\MemeLib.Services.csproj", "{0F33BE01-A345-42DD-912F-09A38A309782}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,9 +48,17 @@ Global
 		{0125D511-D08F-46E9-8C3D-A364E9157196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0125D511-D08F-46E9-8C3D-A364E9157196}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0125D511-D08F-46E9-8C3D-A364E9157196}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E976C94-FA17-4C77-B086-58A33D07F3A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E976C94-FA17-4C77-B086-58A33D07F3A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E976C94-FA17-4C77-B086-58A33D07F3A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E976C94-FA17-4C77-B086-58A33D07F3A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F33BE01-A345-42DD-912F-09A38A309782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F33BE01-A345-42DD-912F-09A38A309782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F33BE01-A345-42DD-912F-09A38A309782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F33BE01-A345-42DD-912F-09A38A309782}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2311B462-CA7F-40C0-9A11-52169FADCCE4} = {BF15ACFA-A9C1-4C7A-8DD8-4D8BFA8EB25A}
+		{2A2E31A7-01F9-4AD2-80B2-FDCA9645D2B2} = {BF15ACFA-A9C1-4C7A-8DD8-4D8BFA8EB25A}
+		{EB2EF75F-FB87-492C-9544-8F7D33289E6F} = {BF15ACFA-A9C1-4C7A-8DD8-4D8BFA8EB25A}
+		{EA1E03CC-97C2-4710-AF92-B0DEADA60C83} = {BF15ACFA-A9C1-4C7A-8DD8-4D8BFA8EB25A}
+		{0125D511-D08F-46E9-8C3D-A364E9157196} = {BF15ACFA-A9C1-4C7A-8DD8-4D8BFA8EB25A}
+		{0F33BE01-A345-42DD-912F-09A38A309782} = {BF15ACFA-A9C1-4C7A-8DD8-4D8BFA8EB25A}
 	EndGlobalSection
 EndGlobal
