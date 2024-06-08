@@ -15,9 +15,15 @@ internal class MigrationHostedService : IHostedService
         _migrationMonitor = migrationMonitor;
     }
 
-    public async Task StartAsync(CancellationToken cancellationToken)
+    public Task StartAsync(CancellationToken cancellationToken)
     {
-        await _migrationMonitor.Migrate(cancellationToken);
+        Task.Run(async () =>
+        {
+            await Task.Delay(1_000, cancellationToken);
+            await _migrationMonitor.Migrate(cancellationToken);
+        }, cancellationToken);
+
+        return Task.CompletedTask;
     }
 
     public Task StopAsync(CancellationToken cancellationToken)

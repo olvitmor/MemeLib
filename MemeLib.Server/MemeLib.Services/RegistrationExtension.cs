@@ -1,4 +1,5 @@
 using MemeLib.Domain.Interfaces;
+using MemeLib.Domain.Interfaces.CreateOrUpdateEntity;
 using MemeLib.Domain.Interfaces.ReadEntity;
 using MemeLib.Services.Database;
 using MemeLib.Services.Memes;
@@ -20,6 +21,8 @@ public static class RegistrationExtension
         builder.Services.AddScoped<IRepositoryService, RepositoryService>();
 
         builder.Services.AddScoped<IMemesReadService, MemesReadService>();
+
+        builder.Services.AddScoped<IMemesCreateOrUpdateService, MemesCreateOrUpdateService>();
 
         return builder;
     }

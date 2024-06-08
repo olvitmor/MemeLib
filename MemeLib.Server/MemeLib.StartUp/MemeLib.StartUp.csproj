@@ -27,6 +27,7 @@
       <ProjectReference Include="..\MemeLib.Api\MemeLib.Api.csproj" />
       <ProjectReference Include="..\MemeLib.DbContext\MemeLib.DbContext.csproj" />
       <ProjectReference Include="..\MemeLib.Domain\MemeLib.Domain.csproj" />
+      <ProjectReference Include="..\MemeLib.Mapper\MemeLib.Mapper.csproj" />
       <ProjectReference Include="..\MemeLib.Services\MemeLib.Services.csproj" />
     </ItemGroup>
 
